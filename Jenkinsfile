@@ -4,7 +4,7 @@ node {
 
     docker.withRegistry('https://registry.hub.docker.com', 'dockerHub') {
 
-        def customImage = docker.build("iappstudio4/Hotel-app")
+        def customImage = docker.build("hotel-app")
 
         /* Push the container to the custom Registry */
         customImage.push()
